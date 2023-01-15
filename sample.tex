@@ -9,7 +9,30 @@
 \begin{document}
 \maketitle
 
-\section{Introduction}
-hello
+\section{Computer Arithmetic}
+
+\subsection{Significant Numbers}
+
+Digits used to express a number. Such that 0.0036, 0.000587, 0.000000296 all have
+only 3 significant figures since the 0's only help to fix the position 
+of the decimal point.
+
+\[3.9\times10^6\to 2\textup{ significant digits}\]
+\[3.909\times10^6\to 4\textup{ significant digits}\]
+\[3\times10^6\to 1\textup{ significant digits}\]
+
+
+\subsection{Floating Point Numbers}
+
+Any integer $ \beta > 1 $ can be used as the base for a number system. 
+Now, since the typcial computer works in binary, there's certain errors 
+while rounding off.
+For example a simple number as $ \frac{1}{10} $ requires an infinite binary
+expression: \[\frac{1}{10} = (0.00011..)_2\]
+But in computer it will return 
+\[0.10000 00014 90116 11938 47656 25000 00000 00000\]
+if you print 0.1 from a 32 bit workstation
+
+
 
 \end{document}
